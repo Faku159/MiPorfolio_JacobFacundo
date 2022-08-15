@@ -20,19 +20,19 @@ div{
         position: absolute;
         width: 15%;
         border-radius: 100%;
-        box-shadow: 3px 3px 3px #F2CEAE;
+        box-shadow: 3px 3px 3px #f2ceae;
         left: 3%;
-        top: 500px;
+        top: 600px;
     }
 }
 @media(max-width: 576px){
     #fotoDePerfil{
         position: absolute;
-        width: 15%;
+        width: 25%;
         border-radius: 100%;
-        box-shadow: 3px 3px 3px grey;
-        left: 33%;
-        top: 615px;
+        box-shadow: 3px 3px 3px #f2ceae;
+        top: 890px;
+        right: 170px;
     }
 }
 
