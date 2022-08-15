@@ -4,16 +4,17 @@
     align-items: center;
 }
 #logoAP{
-    width: 200px;
+    width: 150px;
 }
 
 img{
-    width: 55px;
+    width: 40px;
     padding: 6px;
 }
 
 button{
     color: #F2CEAE;
+    width: 100px;
 }
 
 .redes{
