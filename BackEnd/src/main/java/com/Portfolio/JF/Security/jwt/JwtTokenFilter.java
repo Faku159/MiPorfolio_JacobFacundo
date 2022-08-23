@@ -46,4 +46,8 @@ public class JwtTokenFilter extends OncePerRequestFilter {
             return header.replace("Bearer", "");
         return null; 
     }
+
+    private String getToken(HttpServletRequest request) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
