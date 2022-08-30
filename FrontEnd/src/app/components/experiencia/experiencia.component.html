@@ -1,22 +1,25 @@
 <div class="row">
     <h1>Experiencia laboral</h1>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
+            Nueva experiencia
+        </button>
+    </div>
+
     <div class="col-lg-1"></div>
     <div class="col-lg-11">
-        <ul>
-            <li>
-                <h1>Seguridad</h1> - <h3>(Year)</h3>
-                <p>Trabaje de seguridad en la empresa Phoenix seguridad privada, para el evento "Tecnopolis Paraná".
-                    Ayudaba a organizar a los visitantes, y cuidar los puestos e inmobilario durante lo que duro el evento.
-                </p>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <h1>Informatico</h1> - <h3>(Year)</h3>
-                <p>Actualmente trabajo en un estudio contable, haciendo mantenimiento de las computadoras, tanto de hardware y software.
-                    ademas de ayudar a ordenar papeles y con Exel.
-                </p>
-            </li>
-        </ul>
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Experiencia of expe">
+                    <td><h2>{{Experiencia.nombreE}}</h2></td>
+                    <td>{{Experiencia.descripcionE}}</td>
+                    <td *ngIf="isLogged"><button class="btn btn-dark"> 
+                        <i class="bi bi-pencil-square" routerLink="/editexp/{{Experiencia.id}}"></i>EDITAR</button></td>
+                       
+                    <td *ngIf="isLogged"><button class="btn btn-dark"><i class="bi bi-trash3-fill"></i>BORRAR</button></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
+    
 </div>
