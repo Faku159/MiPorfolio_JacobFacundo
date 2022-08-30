@@ -30,6 +30,16 @@ expe: Experiencia[] = [];
     )
   }
   
-
+delete(id?: number){
+  if (id != undefined){
+    this.sExperiencia.delete(id).subscribe(
+      data => {
+        this.cargarExperiencia();
+      }, err => {
+        alert("No se pudo ")
+      }
+    )
+  }
+}
 }
 
