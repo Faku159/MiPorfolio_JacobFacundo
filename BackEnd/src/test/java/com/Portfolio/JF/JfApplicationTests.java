@@ -8,6 +8,6 @@ class JfApplicationTests {
 
 	@Test
 	void contextLoads() {
-	}
+}
 
 }
